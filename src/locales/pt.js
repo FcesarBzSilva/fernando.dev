@@ -57,7 +57,6 @@ export const pt = {
     subtitle: "Repositórios do meu GitHub que demonstram aplicação de padrões arquiteturais e integração de microsserviços.",
     proj1Desc: "Arquitetura baseada em microsserviços resilientes, garantindo estabilidade e desacoplamento para sistemas de ingressos.",
     proj2Desc: "Repositório dedicado à resolução de problemas complexos envolvendo manipulação e persistência de dados utilizando SQL bruto.",
-    proj3Desc: "Endpoints seguros e manipulação de tokens com arquitetura multi-tenant, garantindo autorização baseada em roles.",
     proj4Desc: "Motor de folha de pagamento para cooperativas com integração direta ao eSocial. Foco pesado em regras de negócio complexas e arquitetura backend escalável.",
     proj5Desc: "Sistema completo de gestão para restaurantes (mesas, caixa, estoque e pedidos online) com geração de métricas financeiras.",
     wipBadge: "Em Desenvolvimento (Privado)"

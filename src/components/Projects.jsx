@@ -20,13 +20,6 @@ export default function Projects() {
       github: "https://github.com/FcesarBzSilva/java-sql-desafios"
     },
     {
-      id: 3,
-      title: "Plataforma Backend Node",
-      description: t('projects.proj3Desc'),
-      tech: ["Node.js", "Express", "Keycloak", "Prisma", "Jest"],
-      github: "https://github.com/FcesarBzSilva"
-    },
-    {
       id: 4,
       title: "Payroll Engine API",
       description: t('projects.proj4Desc'),

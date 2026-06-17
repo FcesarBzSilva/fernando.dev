@@ -57,7 +57,6 @@ export const en = {
     subtitle: "Repositories from my GitHub that demonstrate the application of architectural patterns and microservices integration.",
     proj1Desc: "Architecture based on resilient microservices, ensuring stability and decoupling for ticketing systems.",
     proj2Desc: "Repository dedicated to solving complex problems involving data manipulation and persistence using raw SQL.",
-    proj3Desc: "Secure endpoints and token manipulation with multi-tenant architecture, ensuring role-based authorization.",
     proj4Desc: "Payroll engine for cooperatives with direct eSocial integration. Heavy focus on complex business rules and scalable backend architecture.",
     proj5Desc: "Complete restaurant management system (tables, POS, inventory, and online orders) featuring financial metrics generation.",
     wipBadge: "In Development (Private)"

@@ -1,6 +1,6 @@
 # Fernando Cesar Bezerra Silva
 
-**Parnamirim, Rio Grande do Norte** | (84) 98160-2864 | fbsilva08@hotmail.com | LinkedIn | GitHub
+**Parnamirim, Rio Grande do Norte** | (84) 98160-2864 | fbsilva08@hotmail.com | [LinkedIn](https://www.linkedin.com/in/fernandobzsilva/) | [GitHub](https://github.com/FcesarBzSilva)
 
 ## PROFESSIONAL SUMMARY
 Full-Stack Developer focused on building technological solutions that generate real business results. I have a strong background in Back-End (Node.js, Java / Spring Boot) and AWS infrastructure, designing secure, scalable, and optimized systems. I apply Clean Architecture and SOLID principles daily to ensure long-term code quality, resolving flaws, and automating processes. On the Front-End (React and Tailwind CSS), I work practically to deliver fast and integrated interfaces.
