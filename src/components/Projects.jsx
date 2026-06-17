@@ -1,35 +1,52 @@
-import { Github, Code2 } from 'lucide-react';
-
-const projects = [
-  {
-    id: 1,
-    title: "Microservices Events Tickets",
-    description: "Arquitetura baseada em microsserviços resilientes, garantindo estabilidade e desacoplamento para sistemas de ingressos.",
-    tech: ["Java", "Spring Boot", "RabbitMQ", "PostgreSQL", "Docker"],
-    github: "https://github.com/FcesarBzSilva/microservices-events-tickets"
-  },
-  {
-    id: 2,
-    title: "Java SQL Desafios",
-    description: "Repositório dedicado à resolução de problemas complexos envolvendo manipulação e persistência de dados utilizando SQL bruto.",
-    tech: ["Java", "MySQL", "JDBC", "SQL"],
-    github: "https://github.com/FcesarBzSilva/java-sql-desafios"
-  },
-  {
-    id: 3,
-    title: "Plataforma Backend Node",
-    description: "Endpoints seguros e manipulação de tokens com arquitetura multi-tenant, garantindo autorização baseada em roles.",
-    tech: ["Node.js", "Express", "Keycloak", "Prisma", "Jest"],
-    github: "https://github.com/FcesarBzSilva"
-  }
-]
+import { Github, Code2, Lock } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 export default function Projects() {
+  const { t } = useLanguage();
+
+  const projects = [
+    {
+      id: 1,
+      title: "Microservices Events Tickets",
+      description: t('projects.proj1Desc'),
+      tech: ["Java", "Spring Boot", "RabbitMQ", "PostgreSQL", "Docker"],
+      github: "https://github.com/FcesarBzSilva/microservices-events-tickets"
+    },
+    {
+      id: 2,
+      title: "Java SQL Desafios",
+      description: t('projects.proj2Desc'),
+      tech: ["Java", "MySQL", "JDBC", "SQL"],
+      github: "https://github.com/FcesarBzSilva/java-sql-desafios"
+    },
+    {
+      id: 3,
+      title: "Plataforma Backend Node",
+      description: t('projects.proj3Desc'),
+      tech: ["Node.js", "Express", "Keycloak", "Prisma", "Jest"],
+      github: "https://github.com/FcesarBzSilva"
+    },
+    {
+      id: 4,
+      title: "Payroll Engine API",
+      description: t('projects.proj4Desc'),
+      tech: ["TypeScript", "Node.js", "Clean Architecture", "eSocial", "Jest"],
+      private: true
+    },
+    {
+      id: 5,
+      title: "Gastro-engine",
+      description: t('projects.proj5Desc'),
+      tech: ["TypeScript", "Node.js", "React", "PostgreSQL", "Docker"],
+      private: true
+    }
+  ]
+
   return (
     <section id="projetos" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-800/50">
       <div className="mb-12 text-center">
-        <h2 className="text-3xl font-bold tracking-tight mb-4">Projetos em Destaque</h2>
-        <p className="text-slate-400 max-w-2xl mx-auto font-light">Repositórios do meu GitHub que demonstram aplicação de padrões arquiteturais e integração de microsserviços.</p>
+        <h2 className="text-3xl font-bold tracking-tight mb-4">{t('projects.title')}</h2>
+        <p className="text-slate-400 max-w-2xl mx-auto font-light">{t('projects.subtitle')}</p>
       </div>
       
       <div className="grid lg:grid-cols-3 gap-8">
@@ -42,9 +59,16 @@ export default function Projects() {
                 <div className="p-3 bg-blue-500/10 text-blue-400 rounded-lg group-hover:scale-110 transition-transform">
                   <Code2 className="w-6 h-6" />
                 </div>
-                <a href={project.github} target="_blank" rel="noreferrer" className="text-slate-400 hover:text-white transition-colors duration-200">
-                  <Github className="w-5 h-5" />
-                </a>
+                {project.private ? (
+                  <div className="flex items-center gap-1.5 px-2.5 py-1 bg-slate-800/80 rounded border border-slate-700/50">
+                    <Lock className="w-3.5 h-3.5 text-orange-400" />
+                    <span className="text-xs font-medium text-slate-400">{t('projects.wipBadge')}</span>
+                  </div>
+                ) : (
+                  <a href={project.github} target="_blank" rel="noreferrer" className="text-slate-400 hover:text-white transition-colors duration-200">
+                    <Github className="w-5 h-5" />
+                  </a>
+                )}
               </div>
               <h3 className="text-xl font-bold text-slate-100 mb-3">{project.title}</h3>
               <p className="text-slate-400 text-sm leading-relaxed mb-6 font-light">{project.description}</p>

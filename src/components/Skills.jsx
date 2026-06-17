@@ -1,39 +1,42 @@
 import { Database, Server, Cloud, Code, Shield } from 'lucide-react';
-
-const skillCategories = [
-  {
-    title: "Back-End & APIs",
-    icon: <Server className="w-6 h-6" />,
-    skills: ["Node.js", "Java", "Spring Boot", "TypeScript"]
-  },
-  {
-    title: "Front-End",
-    icon: <Code className="w-6 h-6" />,
-    skills: ["React", "Tailwind CSS", "JavaScript", "HTML/CSS"]
-  },
-  {
-    title: "Cloud & DevOps",
-    icon: <Cloud className="w-6 h-6" />,
-    skills: ["AWS (S3, EC2, Lambda)", "Docker", "Git/GitHub", "CI/CD (GitLab)"]
-  },
-  {
-    title: "Banco de Dados & ORM",
-    icon: <Database className="w-6 h-6" />,
-    skills: ["PostgreSQL", "MySQL", "MongoDB", "Prisma"]
-  },
-  {
-    title: "Engenharia & Segurança",
-    icon: <Shield className="w-6 h-6" />,
-    skills: ["Clean Architecture", "Arquitetura MVC", "SOLID", "Keycloak", "Jest / JUnit"]
-  }
-];
+import { useLanguage } from '../contexts/LanguageContext';
 
 export default function Skills() {
+  const { t } = useLanguage();
+
+  const skillCategories = [
+    {
+      title: t('skills.catBackend'),
+      icon: <Server className="w-6 h-6" />,
+      skills: ["Node.js", "Java", "Spring Boot", "TypeScript"]
+    },
+    {
+      title: t('skills.catFrontend'),
+      icon: <Code className="w-6 h-6" />,
+      skills: ["React", "Tailwind CSS", "JavaScript", "HTML/CSS"]
+    },
+    {
+      title: t('skills.catCloud'),
+      icon: <Cloud className="w-6 h-6" />,
+      skills: ["AWS (S3, EC2, Lambda)", "Docker", "Git/GitHub", "CI/CD (GitLab)"]
+    },
+    {
+      title: t('skills.catDb'),
+      icon: <Database className="w-6 h-6" />,
+      skills: ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Prisma", "JPA"]
+    },
+    {
+      title: t('skills.catEngineering'),
+      icon: <Shield className="w-6 h-6" />,
+      skills: ["Clean Architecture", "Arquitetura MVC", "SOLID", "Keycloak", "Jest / JUnit"]
+    }
+  ];
+
   return (
     <section id="habilidades" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-800/50">
       <div className="mb-12 text-center">
-        <h2 className="text-3xl font-bold tracking-tight mb-4">Habilidades Técnicas</h2>
-        <p className="text-slate-400 max-w-2xl mx-auto font-light">Especializações focadas no design de softwares confiáveis, escaláveis e na construção de infraestruturas cloud robustas.</p>
+        <h2 className="text-3xl font-bold tracking-tight mb-4">{t('skills.title')}</h2>
+        <p className="text-slate-400 max-w-2xl mx-auto font-light">{t('skills.subtitle')}</p>
       </div>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

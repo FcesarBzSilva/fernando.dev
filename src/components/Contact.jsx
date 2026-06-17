@@ -1,13 +1,16 @@
-import { Linkedin, MapPin, Send } from 'lucide-react';
+import { Linkedin, MapPin, Send, Mail } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 export default function Contact() {
+  const { t } = useLanguage();
+
   return (
     <section id="contato" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-800/50">
       <div className="grid lg:grid-cols-2 gap-12 items-center bg-blue-950/20 rounded-3xl p-8 border border-blue-900/50">
         <div>
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">Vamos construir as próximas soluções juntos?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">{t('contact.title')}</h2>
           <p className="text-slate-400 font-light leading-relaxed mb-8">
-            Estou sempre aberto a novos desafios de desenvolvimento back-end, arquiteturas complexas na AWS ou sistemas full-stack modernos. Entre em contato para construirmos produtos de sucesso!
+            {t('contact.subtitle')}
           </p>
           
           <div className="space-y-6">
@@ -16,8 +19,8 @@ export default function Contact() {
                 <MapPin className="w-6 h-6" />
               </div>
               <div>
-                <p className="text-sm font-medium text-slate-400">Localização</p>
-                <p className="text-lg text-slate-200">Parnamirim, RN - Brasil</p>
+                <p className="text-sm font-medium text-slate-400">{t('contact.location')}</p>
+                <p className="text-lg text-slate-200">{t('contact.locationValue')}</p>
               </div>
             </div>
             
@@ -30,6 +33,16 @@ export default function Contact() {
                 <a href="https://www.linkedin.com/in/fernandobzsilva/" target="_blank" rel="noreferrer" className="text-lg text-slate-200 hover:text-blue-400 transition-colors">/in/fernandobzsilva/</a>
               </div>
             </div>
+
+            <div className="flex items-center gap-4">
+              <div className="p-3 bg-blue-500/10 text-blue-400 rounded-lg">
+                <Mail className="w-6 h-6" />
+              </div>
+              <div>
+                <p className="text-sm font-medium text-slate-400">E-mail</p>
+                <a href="mailto:fbsilva08@hotmail.com" className="text-lg text-slate-200 hover:text-blue-400 transition-colors">fbsilva08@hotmail.com</a>
+              </div>
+            </div>
           </div>
         </div>
         
@@ -40,9 +53,9 @@ export default function Contact() {
             </svg>
           </div>
           <h3 className="text-2xl font-bold text-white mb-3">WhatsApp</h3>
-          <p className="text-slate-400 mb-8 font-light max-w-sm">Preferência de contato rápida para alinhamento profissional, dúvidas e oportunidades de projetos.</p>
+          <p className="text-slate-400 mb-8 font-light max-w-sm">{t('contact.whatsappSubtitle')}</p>
           <a href="https://wa.me/5584981602864" target="_blank" rel="noreferrer" className="w-full bg-[#25D366] hover:bg-[#1DA851] text-white font-semibold py-4 px-6 rounded-xl flex justify-center items-center gap-3 transition-all hover:scale-105 active:scale-95 text-lg shadow-lg shadow-green-900/20">
-            Chamar no WhatsApp
+            {t('contact.whatsappBtn')}
             <Send className="w-5 h-5" />
           </a>
         </div>
