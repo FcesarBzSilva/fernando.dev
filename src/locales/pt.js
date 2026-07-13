@@ -16,11 +16,11 @@ export const pt = {
   },
   about: {
     title: "Sobre Mim",
-    p1: "Olá! Me chamo Fernando. Sou graduando em Ciência da Computação e atuo como Desenvolvedor Full-Stack, com foco em otimização de Back-End e soluções em Cloud Computing. Sou certificado oficialmente como",
+    p1: "Olá! Sou o Fernando, Desenvolvedor Back-End & Cloud com forte atuação em arquiteturas resilientes, modelagem de dados e segurança de sistemas. Atualmente finalizando o bacharelado em Ciência da Computação, combino sólida base prática em infraestrutura com vivência real no desenvolvimento de ecossistemas corporativos escaláveis e sou certificado oficialmente como",
     p2: "Um grande diferencial da minha carreira é a bagagem \"mão na massa\" com infraestrutura. Comecei a minha trajetória como suporte técnico, administrando redes (LAN/WAN), VPNs e servidores Windows/Linux. Esse contato direto com a base dura da tecnologia me deu uma fundação sólida para entender o que faz um sistema cair ou escalar na vida real.",
-    p3: "Atualmente, trabalho como Desenvolvedor Full-Stack focado em entregar plataformas eficientes e seguras. No meu dia a dia, gosto de entrar a fundo no código para resolver problemas que realmente impactam o negócio, seja aliviando a carga do servidor integrando serviços da AWS, ou estruturando os sistemas com",
+    p3: "Hoje atuo focado no ecossistema Back-End e Cloud, projetando APIs seguras e performáticas (Node.js, TypeScript e Java/Spring Boot) e integrando interfaces modernas de forma ágil e estruturada. Gosto de entrar a fundo no código para resolver problemas complexos do negócio, otimizando processamento na nuvem AWS e aplicando",
     p3Highlight: "Clean Architecture e SOLID",
-    p3End: "para que o projeto tenha uma manutenção simples no longo prazo.",
+    p3End: "para garantir estabilidade e fácil manutenção a longo prazo. Além do código, atuo como staff e membro ativo na comunidade GDG (Google Developer Group) Natal/RN (Edições 2025 e 2026).",
     backendDesc: "Arquiteturas resilientes com Node.js e Java/Spring Boot.",
     cloudDesc: "Provisionamento e deploy escalável na infraestrutura AWS.",
     seTitle: "Engenharia de Software",
@@ -32,16 +32,16 @@ export const pt = {
     subtitle: "Minha trajetória prática construindo soluções para o mercado real.",
     sempreRole: "Desenvolvedor Full-Stack",
     sempreType: "Presencial",
-    semprePeriod: "Novembro 2025 – Atual",
-    sempreDesc: "Desenvolvimento full-stack (Node.js e React/Tailwind) para plataforma de rastreamento. Otimização arquitetural empregando S3 Pre-signed URLs para aliviar uploads do backend. Implementação de e-mails transacionais com AWS SES via Lambda e segurança robusta utilizando Keycloak (RBAC). Refatoração de sistemas legados eliminando regras de negócio falhas.",
+    semprePeriod: "Outubro 2025 – Julho 2026",
+    sempreDesc: "Trabalhei no coração do ecossistema SuperApp da Comigo Tech, atuando tanto na evolução das APIs em Node.js e TypeScript quanto nas interfaces em React. Um dos meus maiores orgulhos foi reformular todo o sistema de compartilhamento de acessos e convites, criando um fluxo seguro e autônomo para os usuários, com controle de permissões por nível e proteções avançadas contra vulnerabilidades. Também liderei melhorias importantes na nossa arquitetura multi-tenant, como a criação de um SSO customizado para conectar diferentes aplicações em tempo real, a automação completa do pagamento de comissões de afiliados e a otimização de uploads com a AWS. Além do código, participei ativamente das decisões técnicas da equipe, orientando novos estagiários e revisando mais de oitenta Pull Requests para garantir a qualidade do produto final.",
     compassRole: "Desenvolvedor Back-End",
     compassType: "Remoto",
     compassPeriod: "Novembro 2024 – Abril 2025",
-    compassDesc: "Integração e deploy de arquiteturas escaláveis e altamente resilientes sob ambiente da AWS. Criação de APIs RESTful usando Java e Spring Boot. Ampla utilização de mensageria assíncrona desacoplada através do RabbitMQ e manipulação sólida de instâncias EC2, S3 e Lambda.",
+    compassDesc: "Atuei na construção de microsserviços e APIs REST com Java e Spring Boot, focando em sistemas de alta disponibilidade na nuvem AWS. Minha rotina envolvia o desenho de fluxos assíncronos usando mensageria com RabbitMQ para desacoplar serviços críticos, além de gerenciar recursos cloud como EC2, S3 e Lambda em ambientes de produção.",
     doisaRole: "Suporte Técnico de Infraestrutura",
     doisaType: "Presencial",
     doisaPeriod: "Setembro 2021 – Setembro 2024",
-    doisaDesc: "Sólida base na administração de servidores Windows e Linux. Implementação de VPNs corporativas seguras, manutenção de hardware, resolução de incidentes de rede local (LAN/WAN), e acompanhamento rigoroso com ferramentas de backup em nuvem."
+    doisaDesc: "Foi onde construí minha base prática em infraestrutura e redes. Fui responsável pelo suporte técnico e pela administração diária de servidores Linux e Windows Server, além de configurar e manter VPNs corporativas seguras, gerenciar backups em nuvem e solucionar incidentes críticos de conectividade local e remota."
   },
   skills: {
     title: "Habilidades Técnicas",
@@ -54,12 +54,14 @@ export const pt = {
   },
   projects: {
     title: "Projetos em Destaque",
-    subtitle: "Repositórios do meu GitHub que demonstram aplicação de padrões arquiteturais e integração de microsserviços.",
+    subtitle: "Sistemas em produção e repositórios do meu GitHub que demonstram aplicação de padrões arquiteturais, escalabilidade e microsserviços.",
+    projDeathStarDesc: "API Core e Back-End principal do ecossistema de serviços SuperApp. Desenvolvido com Node.js, TypeScript, Express, Prisma ORM e PostgreSQL, estruturando controle de acesso por perfis (RBAC com Keycloak), automação de rotinas financeiras e integração segura de documentos em nuvem (AWS S3).",
+    projCrmDesc: "Módulos internos de gestão de parceiros e ativos do SuperApp. Desenvolvidos em React + TypeScript com React Query, Zod e Tailwind CSS, consumindo APIs RESTful seguras com controle de permissões e autenticação unificada.",
     proj1Desc: "Arquitetura baseada em microsserviços resilientes, garantindo estabilidade e desacoplamento para sistemas de ingressos.",
     proj2Desc: "Repositório dedicado à resolução de problemas complexos envolvendo manipulação e persistência de dados utilizando SQL bruto.",
     proj4Desc: "Motor de folha de pagamento para cooperativas com integração direta ao eSocial. Foco pesado em regras de negócio complexas e arquitetura backend escalável.",
     proj5Desc: "Sistema completo de gestão para restaurantes (mesas, caixa, estoque e pedidos online) com geração de métricas financeiras.",
-    wipBadge: "Em Desenvolvimento (Privado)"
+    wipBadge: "Em Produção / Privado"
   },
   contact: {
     title: "Vamos construir as próximas soluções juntos?",

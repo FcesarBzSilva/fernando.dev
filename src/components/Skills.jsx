@@ -8,27 +8,27 @@ export default function Skills() {
     {
       title: t('skills.catBackend'),
       icon: <Server className="w-6 h-6" />,
-      skills: ["Node.js", "Java", "Spring Boot", "TypeScript"]
+      skills: ["Node.js / Express", "Java / Spring Boot", "TypeScript", "Hasura / GraphQL", "RESTful APIs & OpenAPI"]
     },
     {
       title: t('skills.catFrontend'),
       icon: <Code className="w-6 h-6" />,
-      skills: ["React", "Tailwind CSS", "JavaScript", "HTML/CSS"]
+      skills: ["React & TypeScript", "Tailwind CSS", "React Query / Zod", "React Hook Form", "JavaScript & HTML5/CSS3"]
     },
     {
       title: t('skills.catCloud'),
       icon: <Cloud className="w-6 h-6" />,
-      skills: ["AWS (S3, EC2, Lambda)", "Docker", "Git/GitHub", "CI/CD (GitLab)"]
+      skills: ["AWS (S3, Lambda, SES, EC2)", "Docker & CI/CD", "Git & GitHub Workflow", "Observabilidade (n8n / Slack)"]
     },
     {
       title: t('skills.catDb'),
       icon: <Database className="w-6 h-6" />,
-      skills: ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Prisma", "JPA"]
+      skills: ["PostgreSQL / SQL", "Prisma ORM v2", "Redis Cache", "MySQL", "MongoDB & JPA"]
     },
     {
       title: t('skills.catEngineering'),
       icon: <Shield className="w-6 h-6" />,
-      skills: ["Clean Architecture", "Arquitetura MVC", "SOLID", "Keycloak", "Jest / JUnit"]
+      skills: ["Clean Architecture & SOLID", "Keycloak IAM (RBAC / SSO)", "Microsserviços & ADRs", "Testes Automatizados (Jest/E2E)", "Integrações Bancárias & IoT"]
     }
   ];
 
