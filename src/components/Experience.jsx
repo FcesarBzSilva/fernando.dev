@@ -7,7 +7,7 @@ export default function Experience() {
   const experiences = [
     {
       id: 1,
-      company: "Sempre Comigo",
+      company: "Comigo Tech (Sempre Comigo)",
       role: t('experience.sempreRole'),
       period: t('experience.semprePeriod'),
       type: t('experience.sempreType'),

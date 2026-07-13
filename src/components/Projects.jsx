@@ -6,6 +6,20 @@ export default function Projects() {
 
   const projects = [
     {
+      id: 101,
+      title: "SuperApp Core & Back-End Architecture",
+      description: t('projects.projDeathStarDesc'),
+      tech: ["TypeScript", "Node.js", "Prisma", "Keycloak", "AWS S3 / SES"],
+      private: true
+    },
+    {
+      id: 102,
+      title: "SuperApp Internal Modules & Portal",
+      description: t('projects.projCrmDesc'),
+      tech: ["React", "TypeScript", "React Query", "Zod", "Tailwind CSS"],
+      private: true
+    },
+    {
       id: 1,
       title: "Microservices Events Tickets",
       description: t('projects.proj1Desc'),
